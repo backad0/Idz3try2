@@ -1,0 +1,5 @@
+add_test([=[MyList.MyListTest]=]  [==[C:/Users/alesh/CLionProjects/c++ programing university/Idz3try2/cmake-build-debug/main.exe]==] [==[--gtest_filter=MyList.MyListTest]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[MyList.MyListTest]=]  PROPERTIES WORKING_DIRECTORY [==[C:/Users/alesh/CLionProjects/c++ programing university/Idz3try2/cmake-build-debug]==] SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[MyList.MyListTest1]=]  [==[C:/Users/alesh/CLionProjects/c++ programing university/Idz3try2/cmake-build-debug/main.exe]==] [==[--gtest_filter=MyList.MyListTest1]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[MyList.MyListTest1]=]  PROPERTIES WORKING_DIRECTORY [==[C:/Users/alesh/CLionProjects/c++ programing university/Idz3try2/cmake-build-debug]==] SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  main_TESTS MyList.MyListTest MyList.MyListTest1)
