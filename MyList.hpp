@@ -36,6 +36,4 @@ public:
     MyAIterator* first() const override;
     MyList& operator=(const MyList& obj);
     MyList operator =(MyList&& obj);
-
-    MyList(MyList (*param)(void));
 };
