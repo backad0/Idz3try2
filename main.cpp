@@ -71,7 +71,7 @@ TEST(MyList, MyListTest1){
     }
 
     MyList l1 = list;
-    MyList l2(list);
+    MyList l2(move(list));
 
     MyAIterator* i = new MyList::Iterator(l1);
     i->start();
@@ -87,6 +87,13 @@ TEST(MyList, MyListTest1){
     while (!iter->finish()){
         iter->next();
         cout << iter->get()->data << endl;
+    }
+
+    MyAIterator* it1 = new MyList::Iterator(list);
+    it1->start();
+    while (!it1->finish()){
+        it1->next();
+        cout << it1->get()->data << endl;
     }
 
 }

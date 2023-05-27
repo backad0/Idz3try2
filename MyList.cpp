@@ -134,6 +134,7 @@ MyAIterator *MyList::first() const {
 
 MyList &MyList::operator=(const MyList &obj) {
     if (this != &obj) {
+        buffer = nullptr;
         buffer = new Node;
         const Node *tmp = obj.buffer->next;
         Node *p = buffer;
